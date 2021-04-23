@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .tm-rede-social{
+        width: 50px;
+        height: 50;
+      }
+    </style>
     <title>Bootstrap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+<!--Menu-->
     <nav class="navbar navbar-expand-lg navbar-light bg-success">
         <a class="navbar-brand" href="#">Livraria Yggdrasil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -18,9 +25,6 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Início <span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,14 +47,171 @@
           </form>
         </div>
       </nav>
+<!--/Menu-->
+<!--Carousel-->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="assets/images/LesMiserables.jpg" alt="Primeiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/images/MachadoDeAssis.jpg" alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/images/ClariceLispector.jpg" alt="Terceiro Slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
+<!--/Carousel-->
+<!--Jumbotron-->
+<div class="jumbotron jumbotron-fluid bg-danger">
+  <div class="container">
+    <h1 class="display-4">Sinopses</h1>
+    <p class="lead"></p>
+  </div>
+</div>
+<div class ="container">
+<!--Cards-->
+<div class="card-deck container-fluid mt-3">
+  <div class="card">
+    <img class="card-img-top" src="assets/images/paixaoGH.jpg" alt="Imagem da capa do livro A Paixão Segundo G.H.">
+    <div class="card-body">
+      <h5 class="card-title">A Paixão Segundo G.H., de Clarice Lispector</h5>
+      <p class="card-text">A paixão segundo G.H. conta, através de um enredo banal, o pensar e o sentir de G.H., a protagonista-narradora que despede a empregada doméstica e decide fazer uma limpeza geral no quarto de serviço, que ela supõe imundo e repleto de inutilidades.</p>
+      <p class="card-text"><small class="text-muted">Atualizados em 23/4/2021</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="assets/images/quincasBorba.jpg" alt="Imagem da capa do livro Quincas Borba">
+    <div class="card-body">
+      <h5 class="card-title">Quincas Borba, de Machado de Assis</h5>
+      <p class="card-text">Quincas, prestes a morrer, nomeia como único herdeiro Rubião, um humilde professor interiorano. De posse da fortuna, ele parte para o Rio de Janeiro em busca de status, sem, no entanto, estar preparado para enfrentar os meandros da política, o poder da sedução e a traição, misérias da condição humana de que Quincas - louco ou lúcido? - falava no Humanitismo.</p>
+      <p class="card-text"><small class="text-muted">Atualizados em 23/4/2021</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="assets/images/lesMiserablesBook.jpeg" alt="Imagem da capa do livro Os Miseráveis">
+    <div class="card-body">
+      <h5 class="card-title">Os Miseráveis, de Victor Hugo</h5>
+      <p class="card-text">Um clássico da literatura mundial, esta obra é uma poderosa denúncia a todos os tipos de injustiça humana. Narra a emocionante história de Jean Valjean ― o homem que, por ter roubado um pão, é condenado a dezenove anos de prisão. Os miseráveis é um livro inquietantemente religioso e político, com uma das narrativas mais envolventes já criadas.</p>
+      <p class="card-text"><small class="text-muted">Atualizados em 23/4/2021</small></p>
+    </div>
+  </div>
+</div>
+<!--/Cards-->
 
-
+<div class= "row mt-5 mb-5 container-fluid">
+    <div class="col-md-6">
+      <h4>Sobre o canal</h4>
+      <p>O Ler Antes de Morrer é o mais completo canal sobre literatura do YouTube. Lá você encontra conteúdo exclusivo e de qualidade sobre literatura brasileira e estrangeira, livros de não-ficção, quadrinhos e muito mais. Texto e edição: Isabella Lubrano.</p>
+    </div>
+    <div class="col-md-6">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YUd05GJUznA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
     
 
 
+<!--P/ entrar em contato-->
+<div class="row mb-5">
+  <div class="col-md-12">
+    <h4 class="text-center">
+      Entre em contato conosco
+    </h4>
+  </div>
+</div>
+
+<div class="row d-flex align-items-center">
+  <div class="col-md-6">
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Endereço de email</label>
+        <input type="email" class="form-control" id="exampleEmail" placeholder="nome@exemplo.com">
+      </div>
+     
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Mensagem</label>
+        <textarea class="form-control" id="exampleMensagem" rows="3"></textarea>
+      </div>
+
+      <div class="form-group d-flex justify-content-end">
+        <button class="btn btn-outline-success">Enviar</button>
+      </div>
+    </form>
+  </div>
+<div>
+  <iframe class= "w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14629.023052895465!2d-46.6606897!3d-23.559256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf4ddea8a1b94701f!2sLivraria%20Cultura%20-%20Conjunto%20Nacional!5e0!3m2!1spt-BR!2sbr!4v1618597245180!5m2!1spt-BR!2sbr" 
+            width="400" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen="true" 
+            loading="lazy" id="mapa">
+            </iframe>
+</div>
+
+</div>
+
+<footer class="mt-5">
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-center">
+        <div>
+          <a href="https://github.com/murilo-pm" target="_blank">
+            <img class="tm-rede-social p-15" src="assets/images/github.png" alt="logo do github">
+        </a>
+        <a href="https://www.linkedin.com/in/murilo-p-708885104/" target="_blank">
+            <img class="tm-rede-social p-15" src="assets/images/linkedin.png" alt="logo do linkedin">
+        </a>
+        <a href="https://www.instagram.com/murilo.paulino/" target="_blank">
+            <img class="tm-rede-social p-15" src="assets/images/instagram.png" alt="logo do instagram">
+        </a>
+        </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <p class="text-center">
+        Murilo Paulino Machado &copy; 2021. All rights reserved
+      </p>
+    </div>
+  </div>
+</footer>
 
 
 
+
+<!--/Jumbotron-->
+<!-- Grid-
+      "container-fluid" caso queira utilizar quase 100% da tela--
+      <div class="container">
+                         -display:flex + justificar o conteúdo--
+        <div class="row mt-3 d-flex justify-content-center">
+          <div class="col-md-1">
+            <div class="bg-info">1st column</div>
+          </div>
+          <div class="col-md-1">
+            <div class="bg-info">2nd column</div>
+          </div>
+          <div class="col-md-1">
+            <div class="bg-info">3rd column</div>
+          </div>
+          <div class="col-md-1">
+            <div class="bg-info">4th column</div>
+          </div>
+          <div class="col-md-1">
+            <div class="bg-info">5th column</div>
+          </div>
+        </div>
+      </div>
+
+--/Grid-->
 
     <!-- Añadir enlaces para establecer una comunicación con la nube del BootstrapCDN -->
     <!-- Quando instalado, evita-se a perda/interrupção/queda do servidor do BootStrap-->
